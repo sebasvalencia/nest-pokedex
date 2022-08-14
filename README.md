@@ -25,6 +25,7 @@ Descargar imagen de Mongo 5.0.0 y postgres 14
 docker pull mongo:5.0.0
 docker pull postgres:14.3
 
+npm i class-validator class-transformer
 npm i @nestjs/mongoose mongoose
 ```
 
