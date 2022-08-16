@@ -27,6 +27,8 @@ docker pull postgres:14.3
 
 npm i class-validator class-transformer
 npm i @nestjs/mongoose mongoose
+
+npm i axios
 ```
 
 ## Stack usado
