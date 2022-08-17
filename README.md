@@ -18,6 +18,10 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Reconstruir la BD
+```
+localhost:3000/api/v2/seed
+```
 
 # Otros
 Descargar imagen de Mongo 5.0.0 y postgres 14
