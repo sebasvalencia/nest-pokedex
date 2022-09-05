@@ -29,7 +29,7 @@ import { EnvConfiguration } from './config/env.config';
   ],
 })
 export class AppModule {
-  constructor() {
-    console.log(process.env);
-  }
+  // constructor() {
+  //   console.log(process.env);
+  // }
 }
