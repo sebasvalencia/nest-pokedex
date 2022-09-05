@@ -45,6 +45,12 @@ npm i @nestjs/mongoose mongoose
 npm i axios
 ```
 
+## Notas
+Heroku redeploy sin cambios:
+```
+git commit --allow-mpty -m "Tigger Heroku deploy"
+```
+
 ## Stack usado
 
 * MongoDB
