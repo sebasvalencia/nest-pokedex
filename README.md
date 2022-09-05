@@ -45,11 +45,29 @@ npm i @nestjs/mongoose mongoose
 npm i axios
 ```
 
-## Notas
+## Notas Deploy
+
+Push changes to Github:
+```
+git add .
+git commit -am "make it better"
+git push origin main | git push
+```
+
 Heroku redeploy sin cambios:
 ```
 git commit --allow-mpty -m "Tigger Heroku deploy"
+git push heroku <master|main>
 ```
+Push changes to heroku:
+```
+git push heroku main
+```
+Heroku logs on the console of the project:
+```
+heroku logs --tail
+```
+
 
 ## Stack usado
 
