@@ -17,7 +17,7 @@ npm i -g @nestjs/cli
 4. Levantar la base de datos
 ```
 docker-compose up -d
-```
+``` 
 
 5. Clonar el archivo __env.template__ y renombrar la copia a ```.env```
 
@@ -33,19 +33,7 @@ npm run start:dev
 localhost:3000/api/v2/seed
 ```
 
-# Otros
-Descargar imagen de Mongo 5.0.0 y postgres 14
-```
-docker pull mongo:5.0.0
-docker pull postgres:14.3
-
-npm i class-validator class-transformer
-npm i @nestjs/mongoose mongoose
-
-npm i axios
-```
-
-## Notas Deploy
+# Deploy
 
 Push changes to Github:
 ```
@@ -68,6 +56,31 @@ Heroku logs on the console of the project:
 heroku logs --tail
 ```
 
+# Production Build
+1. Create ```.env.prod```
+2. Full the env variables to prod
+3. Create the new image
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+Run
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+
+Por defecto, docker-compose usa el archivo .env, por lo que si tienen el archivo .env y lo configuran con sus variables de entorno de producción, bastaría con
+
+
+# Otros
+Descargar imagen de Mongo 5.0.0 y postgres 14
+```
+docker pull mongo:5.0.0
+docker pull postgres:14.3
+
+npm i class-validator class-transformer
+npm i @nestjs/mongoose mongoose
+
+npm i axios
+```
 
 ## Stack usado
 
